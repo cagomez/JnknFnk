@@ -1,0 +1,16 @@
+/*
+	Filename         : 	print.css
+	Created by       : 	Owain Llewellyn
+	Created          : 	xx/xx/2011
+	Last Updated     : 	xx/xx/2011
+	Comments         : 	Styling for _NAME_OF_PROJECT_
+*/
+
+/*  Print styles
+************************************************************************************************************************/
+
+#globalNav,
+#mainNav,
+.breadcrumb {
+	display:none;
+}

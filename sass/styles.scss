@@ -1,0 +1,263 @@
+/* Theme: Jnknfnk Redesign 2012 */
+/*  
+*/ 
+
+
+
+/**
+ * Colours
+ ********************************************************************/
+
+$green: #5f8a79;
+$greyLight: #e9e9e9;
+$greyDark: #ababab;
+$greyText: #777575;
+$black: #242424;
+$white: #FFF;
+
+
+/**
+ * Fonts
+ ********************************************************************/
+
+@font-face { 
+	font-family: fontTypeOne; 
+	src: url('../type/PompejiRegular.ttf'); 
+} 
+
+@font-face { 
+	font-family: fontTypeTwo;
+	src: url('../type/ITCAvantGardeStd-Bold.otf'); 
+}
+
+@font-face { 
+	font-family: fontTypeThree;
+	src: url('../type/ITCAvantGardeStd-Md.otf'); 
+}
+
+
+
+/**
+ * Mixins
+ ********************************************************************/
+
+@mixin border-radius($radius: 10px) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin media-type{
+
+	background:$black;
+	font-family:fontTypeThree, helvetica, verdana, arial sans-serif;
+	color:$white;
+	letter-spacing:1px;
+	font-size:9px;
+	line-height:9px;
+	padding:7px 8px 4px 8px;
+	text-transform:uppercase;
+
+	@include border-radius(5px);
+}
+
+@mixin box-sizing{
+
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+
+
+/**
+ * Stylesheets
+ ********************************************************************/
+
+@import "header.scss";  
+@import "carousel.scss"; 
+@import "media-box.scss"; 
+@import "footer.scss"; 
+@import "overlay.scss"; 
+
+body {
+	font:62.5%/1.5 helvetica, verdana, arial sans-serif;
+	background: $greyLight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform:uppercase;
+	line-height:1.2em;
+	margin-bottom:10px;
+	font-family: fontTypeTwo, helvetica, verdana, arial sans-serif;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+h2 {
+	font-size:1.5em;
+}
+
+a {
+	color:$green;
+}
+
+p {
+	color:$greyText;
+	word-wrap:break-word;
+}
+body.noScroll{
+	overflow:hidden;
+}
+
+#wrapper {
+	max-width: 1349px;
+	margin: 0 auto;
+	position:relative;
+	overflow:hidden;
+
+}
+
+
+
+
+
+
+#content {
+	background:$white;
+	overflow:hidden;
+	min-height:1000px;
+	position:relative;
+	margin:540px auto 0 auto;
+	width:976px;
+	
+}
+
+	.social {
+		padding:20px 0;
+		margin:0 20px 20px 20px;
+		border-bottom:1px solid $greyLight;
+		height:20px;
+
+		li {
+			padding-right:20px;
+			height:20px;
+			float:left;
+			font-size:1.1em;
+			color:$black;
+		}
+
+		li.facebook {
+			padding-left:29px;
+			background: url('../images/icon-facebook.png') 0 0 no-repeat;
+		}
+
+		li.twitter {
+			width: auto;
+			padding: 2px 20px 0px 27px;
+			background-size: 20px 22px;
+			background: url("../images/icon-twitter.png") 0 1px no-repeat;
+
+
+			span {
+				color: $greyDark;
+			}
+		}
+	}
+
+	.inner-content {
+		min-height:200px;
+	}
+	#content .row {
+		margin-bottom: 20px;
+		border-bottom: 1px solid $greyLight;
+		overflow: hidden;
+		margin: 0 20px 20px 20px;
+
+		li:last-child {
+			margin-right:0;
+		}
+	}
+
+		
+.loading-container {
+	background-color:#fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 999;
+
+
+	
+}
+
+.loading {
+			height:100px;
+			width:auto;
+			left:50%;
+			top:5%;
+			margin:-16px 0 0 -68px;
+			background: transparent url('../images/ajax-loader-white.gif') top center no-repeat;
+			position:absolute;
+
+			font-family: fontTypeOne;
+			color:$black;
+			font-size: 2.5em;
+			text-transform: uppercase;
+			padding-top:50px;
+			
+	}
+
+.load-more {
+	display:block;
+	background: $greyLight;
+	text-align:center;
+	width:96%;
+	border:none;
+	padding:20px;
+	text-transform:uppercase;
+	font-family:fontTypeOne;
+	font-size:1.6em;
+	margin:0 20px 20px 20px;
+}
+
+	.load-more:hover {
+		cursor:pointer;
+	}
+
+
+.load-more.loading-more{
+	background: $greyLight url('../images/ajax-loader.gif') center 15px no-repeat;
+	text-indent:-9999999px;
+}
+
+body div.error {
+	padding:20px;
+
+	h1 {
+		font-size:2.6em;
+	}
+
+	p {
+		font-size:1.2em;
+	}
+}
+
+
+/*
+Media Queries
+ */
+
+@media screen and (max-width: 1250px) {
+  #carousel li div {
+    
+    		margin-right:300px;
+  }
+
+  #carousel .pager {
+
+		right:100px;  	
+  }
+}
+

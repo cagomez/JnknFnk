@@ -1,0 +1,41 @@
+/*
+	Filename         : 	home.css
+	Created by       : 	Owain Llewellyn
+	Created          : 	xx/xx/2011
+	Last Updated     : 	xx/xx/2011
+	Comments         : 	Styling for _NAME_OF_PROJECT_
+*/
+
+/* Global Navigation Bar
+************************************************************************************************************************/
+
+ul#globalNav {
+	overflow:hidden;
+	height:1%;
+	clear:left;
+}
+	ul#globalNav li {
+		float:left;
+	}
+
+/* Main Navigation Bar
+************************************************************************************************************************/
+
+ul#mainNav {
+}
+	ul#mainNav li {
+	}
+	
+
+/* Breadcrumb
+************************************************************************************************************************/
+
+ul.breadcrumb {
+	width:100%;
+	clear:left;
+	overflow:hidden;
+	height:1%;
+}	
+	ul.breadcrumb li {
+		float:left;
+	}

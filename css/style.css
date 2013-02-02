@@ -1,0 +1,246 @@
+/*
+-----------------------------------------------------
+Default CSS file for [ _NAME_OF_PROJECT_ ]
+Media:screen, projection
+
+Author: Owain Llewellyn
+Created: 	xx/xx/2011
+
+To enable easier tabbing:
+= denotes main section
+& denotes sub section
+
+Also:
+    - IE specific stylesheet (tweaks.css)
+    - print stylesheet (print.css)
+    - Add as required
+
+Table of contents
+-----------------------------------------------------
+    1.    Constants                                     For reference purposes only
+    2.    Defaults                                      Standard sitewide definitions
+        A.  Links
+        B.  Typography
+        C.  Tables
+        D.  Forms
+        E.  Lists
+    3.    Structure/Layout                              Template building blocks
+    4.    Navigation                                    All site navigation
+        A.  Main menu
+        B.  Secondary menu
+    5.    Furniture                                     Template look and feel
+        A.  Header
+        B.  Footer
+    6.    Page Content                                  All content within wrapper
+        A.  Primary content
+        B.  Secondary content
+        C.  Modules and rows
+        D.  Main site
+        E.  Checkout
+        F.  Account
+    7.  Misc
+
+
+1. Constants
+-----------------------------------------------------
+    Colours
+    -------------------------------------------------
+    #1f1f1a = Colour (main background colour)
+    #FFF = Colour (text colour)
+    #e7c901 = Colour (link hover colour)
+
+    Font sizes
+    -------------------------------------------------
+    body =      (14px)
+    ol, ul =    (12px)
+    table =     (11px)
+
+
+/* = 2 Defaults
+----------------------------------------------------- */
+
+html, body, input {
+	font-family:Helvetica, Arial, sans-serif;
+}
+body {
+/* Uncomment to add :hover states for tags other than anchors in IE6 - relative to html file
+	behavior:url("/js/csshover3.htc");*/
+	font-size:62.5%;
+	background:#191919;
+} 
+strong {
+	font-weight:bold;
+}
+.show {
+	display:block;
+}
+.hide {
+	display:none;
+}
+.clear {
+	clear: both !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	font-size: 1px !important;
+	height: 1px !important;
+	width: 1px !important;
+	float: none !important;
+}
+
+img {
+  max-width:100%;	
+}
+
+	/* & 2.A Links
+	----------------------------------------------------- */
+	
+	/* & 2.B Typography
+	----------------------------------------------------- */
+	
+	h1,h2,h3,h4,h5,h6 {
+	  color:#FFF;	
+	}
+	
+	p {
+		font-size:1.3em;
+		line-height:1.5em;
+		color:#FFF;
+		font-weight:100;
+		padding-bottom:20px;
+	}
+	
+	a {
+		text-decoration:none;
+		color:#e7c901;
+	}
+		a:hover {
+			text-decoration:underline;
+		}
+	
+	
+	  
+	  
+	
+	/* & 2.C Tables
+	----------------------------------------------------- */
+	
+	/* & 2.D Forms
+	----------------------------------------------------- */
+	
+	/* & 2.E Lists
+	----------------------------------------------------- */
+	
+    ul {
+    }
+
+	ol {
+		list-style:decimal;
+	}
+	
+	
+ 
+ 
+/* = 3 Structure / Layout
+----------------------------------------------------- */
+
+  div.left_col{
+	
+  }
+
+  div.right_col{
+	 
+  }
+  
+  div.col {
+	 
+  }
+  
+  div.last {
+	  margin:0;  
+  }
+  
+  .main,
+  .secondary{
+	
+  }
+
+/* = 4 Navigation
+----------------------------------------------------- */
+	/* & 4.A Main menu
+	----------------------------------------------------- */	
+	/* & 4.B Secondary menu
+	----------------------------------------------------- */
+	
+
+/* = 5 Furniture
+----------------------------------------------------- */
+
+	/* & 5.A Header
+	----------------------------------------------------- */
+	header {
+	  padding:40px 0;
+	  overflow:hidden;
+    }
+	
+	 
+	
+	/* & 5.B Footer
+	----------------------------------------------------- */
+	footer {
+		
+    }
+	
+	  footer ul li {
+		 float:left;  
+	  }
+	  
+    
+
+
+/* = 6 Page Content
+----------------------------------------------------- */
+	/* & 6.A Primary Content
+	----------------------------------------------------- */
+	div#wrapper {
+		max-width:; /* CHANGE ME TO PAGE WIDTH YOU REQUIRE! */
+		margin:0 auto;
+		padding:0; /* 20 / 820 */
+    }
+	
+	
+	
+	/* & 6.B Secondary Content
+	----------------------------------------------------- */
+	
+	/* Event info styles
+	***************************************************/
+	
+	
+	
+	
+	/* & 6.C Modules & Rows
+	----------------------------------------------------- */
+	
+	
+	
+	
+
+/* = 7 Misc
+----------------------------------------------------- */
+
+.highlight {
+  color:#;	
+}
+
+.button {
+	}
+
+ 
+@media screen and (max-width: 780px) {
+ 
+}
+
+@media screen and (max-width: 320px) {
+ 
+}

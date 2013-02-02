@@ -1,0 +1,88 @@
+/**
+ * Carousel
+ ********************************************************************/
+
+ #carousel {
+	position:absolute;
+	top:0;
+	z-index:-1;
+	display:block;
+	width:100%;
+
+	li {
+
+		div {
+			float:right;
+			width:489px;
+			margin:195px 180px 0 0;
+			z-index:0;
+
+			h1 {
+				color:$white;
+				font-size:97px;
+				letter-spacing: 0px;
+				line-height:92px;
+				font-family:fontTypeOne;
+			}
+
+			p {
+				font-family: helvetica, verdana, arial sans-serif;
+				color:$white;
+				font-size:1.3em;
+				letter-spacing: 1px;
+				margin-bottom:20px;
+			}
+
+			span {
+				@include media-type;
+			}
+		}
+	}
+}
+
+ #carousel { 
+	position:absolute;
+	top:0;
+	z-index:-9;
+	display:block;
+	overflow:hidden;
+}
+#carousel .viewport { 
+	height:698px;
+	float:left;
+	width:1349px; 
+	position:relative;
+	overflow:hidden;
+}
+#carousel .buttons { display: block; margin: 30px 10px 0 0; float: left; }
+#carousel .next { margin: 30px 0 0 10px;  }
+#carousel .disable { visibility: hidden; }
+#carousel .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
+#carousel .overview li{ 
+	height:698px;
+	float:left;
+	width:1349px;
+}
+
+#carousel .pager {
+	position: absolute;
+	bottom: 125px;
+	right: 200px;
+
+	li {
+		float:left;
+		height:10px!important;
+		width:11px;
+		margin-right:4px;
+	}
+
+	li a {
+		display:block;
+		height:11px;
+		background:url('../images/icon-carousel-off.png') 0 0 no-repeat;
+	}
+
+	li a.active {
+		background:url('../images/icon-carousel-on.png') 0 0 no-repeat;
+	}
+}

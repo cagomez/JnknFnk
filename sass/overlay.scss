@@ -1,0 +1,184 @@
+/**
+ * Overlay
+ ********************************************************************/
+
+ .overlay-outer {
+ 	display:none;
+ 	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 200%%;
+	background-color:rgba(0,0,0,0.9);
+	z-index: 99999999;
+
+	.overlay-inner {
+		width:780px;
+		min-height:500px;
+		position:absolute;
+		left:50%;
+		background-color:#FFF;
+		z-index:1002;
+		margin-left:-400px;
+		padding:30px 20px 20px 20px;
+		@include box-sizing;
+
+		.overlay-content-outer {
+			display:none;
+		}
+
+		.loading {
+			z-index:99999;
+			top:20%;
+		}
+
+		.close {
+			position:absolute;
+			display:block;
+			right:-58px;
+			top:0;
+			width:58px;
+			height:58px;
+			z-index:9999999;
+
+			background: $greyLight url('../images/icon-close.png') 0 0 no-repeat;
+		}
+
+			.close:hover {
+				cursor:pointer;
+			}
+
+		h1, h2, h3, h4, h5 {
+			margin-bottom:10px;
+		}
+
+		img, blockquote {
+			margin-bottom:30px;
+		}
+		p {
+			font-size: 1.2em;
+			line-height:1.6em;
+			font-family:helvetica, arial, sans-serif;
+			margin-bottom:20px;
+		}
+
+		blockquote {
+			background: $black;
+			padding:20px;
+
+			h5 {
+				font-size:1.2em;
+				color:#FFF;
+				margin-bottom:10px;
+			}
+
+			p {
+				font-size:1em;
+				margin-bottom:10px;
+				color:#FFF;
+			}
+		}
+
+		.left-col {
+			float: left;
+			width: 66.28%;
+			@include box-sizing;
+			margin-right: 20px;
+
+			time {
+				position:absolute;
+				top:28px;
+				right:20px;
+				font-size:1.4em;
+				font-weight:bold;
+				font-family:fontTypeTwo;
+				text-transform:uppercase;
+			}
+
+			h1 {
+				font:5.1em/0.98em fontTypeOne;
+				
+			}
+
+			h2 {
+				font-size:3.0em;
+			}
+
+			h3 {
+				font-size:2.4em;
+			}
+
+			h4 {
+				font-size:2.0em;
+			}
+
+			h5 {
+				font-size:1.7em;
+			}
+			
+			.intro-text {
+				font-weight:bold;
+				letter-spacing:0.15em;
+			}
+
+			.social-post{
+				border-bottom: 1px solid #E9E9E9;
+    			margin-bottom: 20px;
+    			padding: 5px 0 3px 0;
+    			overflow: hidden;
+
+    			li {
+    				float:left;
+    			}
+			} 
+		}
+
+
+		.right-col {
+			float:right;
+			width:31%;
+			margin-top:150px;
+
+			.side-module {
+
+				border-bottom:1px solid $greyLight;
+				margin-bottom:30px;
+
+				h3 {
+					font-size:1.6em;
+					margin-bottom:10px;
+				}
+
+				span {
+					font-family: fontTypeTwo;
+					font-size:1.4em;
+					margin-bottom:10px;
+					color:$green;
+					text-transform:uppercase;
+
+				}
+				ul {
+					margin-bottom:20px;
+
+					li {
+						list-style-type:disc;
+						list-style-position:inside;
+
+						a {
+							font-size:1.2em;
+							line-height:2em;
+						}
+					}
+				}
+
+				
+
+			}
+
+		}
+
+	}
+ }
+
+
+ 

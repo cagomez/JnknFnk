@@ -1,0 +1,25 @@
+/**
+ * Footer
+ ********************************************************************/
+
+ footer {
+	background:$black;
+	overflow:hidden;
+	padding:20px;
+	
+
+	small {
+		font-size:1.1em;
+		color:$white;
+	}
+
+	small.copyright {
+		float:left;
+	}
+
+	small.author {
+		float:right;
+	}
+	
+
+}

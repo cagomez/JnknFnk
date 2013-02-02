@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+  background:#333;
+  font-size:62.5%;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#FFF;
+}
+
+#wrapper{
+  width:800px;
+  margin:30px auto 0;
+}
+
+  #wrapper img{
+	  margin-bottom:25px;  
+  }
+  
+   #wrapper h1 {
+	  font-weight:bold;
+	  font-size:3.2em;
+	  letter-spacing:-1px;
+	  margin-bottom:15px;
+   }
+   
+   #wrapper h2 {
+	  font-size:2.2em;
+	  font-weight:bold;
+	  margin-bottom:15px;
+   }
+
+a {
+  color:#e0eb00;
+  font-size:1.2em;
+  
+}

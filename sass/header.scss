@@ -1,0 +1,44 @@
+/**
+ * Header
+ ********************************************************************/
+
+ header {
+	background:$black;
+	margin: 0 auto;
+	position:relative;
+	height:95px;
+	width:976px;
+
+	img {
+		float:left;
+		position:absolute;
+		left:70px;
+		top:7px;
+	}
+
+	ul {
+		float:left;
+		margin-left:260px;
+		position:relative;
+		top:34px;
+
+		li {
+			float:left;
+			
+
+			a {
+				color:$white;
+				text-decoration:none;
+				text-transform: uppercase;
+				font-family:fontTypeOne;
+				font-size: 2.8em;
+				letter-spacing: 1px;
+				margin-right: 35px;	
+			}
+
+			a:hover {
+				color:$green;
+			}
+		}
+	}
+}

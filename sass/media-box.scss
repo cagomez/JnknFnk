@@ -1,0 +1,51 @@
+/**
+ * Media Box
+ ********************************************************************/
+
+ .media-box{
+			max-width:219px;
+			float:left;
+			position:relative;
+			margin-right:20px;
+			list-style-type:none;
+
+			img {
+				margin-bottom:10px;
+			}
+
+			h2 {
+				font-family: fontTypeTwo, helvetica, verdana, arial, sans-serif
+			}
+
+			ul {
+				list-style-type: none;
+				text-transform: uppercase;
+				overflow:hidden;
+				margin-bottom:15px;
+
+				li:first-child {
+					float:left;
+					@include media-type;
+				}
+
+				li:last-child {
+					float:right;
+					font-weight:bold;
+					top:7px;
+					position:relative;
+				}
+			}
+
+			p {
+				font-size:1.2em;
+				margin-bottom:20px;
+			}
+
+			a {
+				text-decoration:none;
+			}
+
+			a:hover {
+				text-decoration:underline;
+			}
+		}
